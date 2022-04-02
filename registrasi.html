@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+        <style>
+
+            body{
+                font-family: Helvetica, sans-serif;
+            }
+    
+            .topnav {
+              overflow: hidden;
+              background-color: #429CAD;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+            }
+            
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            
+            .topnav a.active {
+              color: white;
+            }
+            
+            .topnav-right {
+              float: right;
+              margin-right: 40px;
+            }
+            
+            .topnav-left{
+              float: left;
+              position: fixed;
+              left: 10px;
+            }
+    
+            .kotak{
+                background-color: white;
+                background-image: url(/Gambar/Asset\ 1.png);
+                background-repeat: no-repeat;
+                background-size: 1450px 600px;
+                background-position: 35px 160px;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 800px;
+                margin-top: 0;
+                z-index: -1;
+            }
+    
+            .align{
+                text-align: center;
+                margin-top: 5px;
+                color: black;
+                position: absolute;
+                left: 300px;
+            }
+            
+    
+            h3{
+                font-weight: 100;
+                font-size: small;
+            }
+    
+            h2{
+              font-weight: 300;
+              font-size: 25px;
+            }
+    
+            * {
+              box-sizing: border-box;
+            }
+    
+            .column {
+              margin-top: 160px;
+              margin-left: 550px;
+              float: left;
+              width: 50%;
+              padding: 20px;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+              }
+            }
+    
+            p{
+              text-align: justify;
+              font-size: large;
+            }
+    
+            .posisi{
+              position: absolute;
+              left: 50px;
+            }
+    
+            .p1{
+              text-decoration-line: underline;
+              text-decoration-style: dotted;
+              color: #A0A1CF;
+            }
+
+            .box{
+                background-color: #e3f8fe;
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
+
+            img{
+              z-index: 1;
+              margin-top: 210px;
+              margin-left: 140px;
+
+            }
+
+            input[type=text], select {
+              width: 280%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+
+            input[type=submit] {
+              width: 280%;
+              background-color: #429CAD;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-weight: bolder;
+            }
+
+            input[type=submit]:hover {
+              background-color: #237b8d;
+            }
+
+            .div1{
+              position:absolute;
+              left: 870px;
+              top: 150px;
+              z-index: 2;
+            }
+
+            h1{
+              position: absolute;
+              z-index: 2;
+              top: 60px;
+              left: 868px;
+            }
+
+            .h11{
+              position:absolute;
+              left: 100px;
+              top: 60px;
+              z-index: 2;
+              font-size: 40px;
+            }
+
+            .h12{
+              position:absolute;
+              left: 100px;
+              top: 115px;
+              z-index: 2;
+              font-size: 40px;
+            }
+    
+            </style> 
+
+</head>
+<body>
+
+    <h1>Pendaftaran Konten Kreator Webdev</h1>
+
+      <h1 class="h11">Sharing konten webdev</h1>
+      <h1 class="h12">bersama <span style="color:#429CAD;;">PODCAST WEBDEV</span></h1>
+
+    <img src="/Gambar/Asset 22.png" width="425" height="485" alt="">
+    <div class="box"></div>
+    
+    <div class="topnav">
+        <div class="topnav-left">
+         <a class="active" href="#home">PODCAST WEBDEV</a>
+        </div>
+        <div class="topnav-right">
+          <a href="/index.html">HOME</a>
+          <a href="/about.html">ABOUT</a>
+          <a href="#contact">REGISTER</a>
+        </div>
+      </div>
+
+      <div class="div1">
+        <form>
+          <label for="nama">Nama</label><br>
+          <input type="text" id="nama" name="firstname" placeholder="Nama Anda..."><br>
+          <br>
+          <div id="jk">
+            <label for="">Jenis Kelamin</label><br><br>
+            <input type="radio" id="jk1" name="fav_language" value="HTML">
+            <label for="jk1">Pria</label>
+            <input type="radio" id="jk2" name="fav_language" value="CSS">
+            <label for="jk2">Wanita</label><br>
+          </div>
+          <br>
+          <label for="usia">Usia</label><br>
+          <input type="text" id="usia" name="lastname" placeholder="Usia Anda..."><br>
+
+          <label for="pk">Pekerjaan</label><br>
+          <input type="text" id="pk" name="lastname" placeholder="Pekerjaan Anda..."><br>
+
+          <label for="dms">Domisili</label><br>
+          <input type="text" id="dms" name="lastname" placeholder="Domisili Anda..."><br>
+
+          <label for="email">Email</label><br>
+          <input type="text" id="email" name="lastname" placeholder="Email Anda..."><br>
+        
+          <input type="submit" value="Submit" id="submit" onclick="tampil()">
+        </form>
+      </div>
+
+      <script>
+        function tampil() {
+                var nama = document.getElementById("nama").value;
+          var rates = document.getElementById("jk").value;
+          var usia = document.getElementById("usia").value;
+          var pk = document.getElementById("pk").value;
+          var dms = document.getElementById("dms").value;
+          var email = document.getElementById("email").value;
+    
+                if (document.getElementById("jk1").checked) {
+                    alert('Selamat, pendaftaran konten kreator podcast webdev Anda berhasil \n'+
+            'Nama : ' +nama+' (L)'+'\n'+
+            'Usia : '+usia+' tahun\n'+
+            'Pekerjaan : '+pk+'\n'+
+            'Domisili : '+dms+'\n'+
+            'Email : '+email+'\n');
+                } else {
+                    alert('Selamat Datang di Komunitas Pecinta Kucing \n'+
+            'Nama : ' +nama+' (P)'+'\n'+
+            'Usia : '+usia+' tahun\n'+
+            'Pekerjaan : '+pk+'\n'+
+            'Domisili : '+dms+'\n'+
+            'Email : '+email+'\n');
+                }            
+    
+            }
+      </script>
+
+</body>
+</html>
